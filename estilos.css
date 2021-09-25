@@ -1,8 +1,11 @@
-body {
+/* body {
   background: var(--ipt-baseAlt-shade1-bg, rgb(31, 31, 31));
   color: #fff;
+} */
+.fondo-gris{
+   background: var(--ipt-baseAlt-shade1-bg, rgb(31, 31, 31));
+   color: #fff;
 }
-
 /* HEADER */
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -300,9 +303,7 @@ p {
 
 /* NOMINADOS-OSCAR */
 
-.container-background-gris{
-  background-color: #fff;
-  color: #121212;
-  display: flex;
+.container-blanco{
+
   justify-content: center;
 }
