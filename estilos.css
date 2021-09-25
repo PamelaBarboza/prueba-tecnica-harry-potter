@@ -1,0 +1,308 @@
+body {
+  background: var(--ipt-baseAlt-shade1-bg, rgb(31, 31, 31));
+  color: #fff;
+}
+
+/* HEADER */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: rgb(0, 0, 0);
+  background-color: #fded0d;
+  font-weight: bold;
+}
+
+.nav {
+  background-color: #121212;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  background-color: rgba(128, 128, 128, 0.301);
+  color: #fff;
+}
+.form-control {
+  width: 800px;
+  padding: 0;
+  align-items: center;
+}
+
+.form-inline {
+  padding-top: 6px;
+}
+
+/* CONTENEDOR-CENTRAL */
+
+.contenedor-central {
+  display: flex;
+  justify-content: space-around;
+}
+.container {
+  justify-content: center;
+}
+.row {
+  padding-top: 30px;
+}
+
+.col-md-4 {
+  color: #fff;
+  width: 40%;
+}
+.offset-md-3 {
+  margin-left: 20%;
+}
+.texto-pelicula {
+  font-size: 35px;
+}
+.offset-md-4 {
+  margin-left: 20%;
+}
+
+/* TEXTO COLUMNA DERECHA */
+
+.contenedor-items {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 100px;
+}
+
+.textos-columna-derecha {
+  font-weight: bold;
+  color: gray;
+}
+.imagen-estrella {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.imagen-estrella-azul {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.estrella-puntaje {
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  margin: 0;
+}
+
+.seguidores {
+  margin: -9px;
+  margin-left: 8px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.rate {
+  margin-top: 5px;
+  color: rgb(87, 153, 239);
+  font-weight: bold;
+}
+.imagen-popularidad {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 1023px) {
+  .contenedor-items {
+    display: none;
+  }
+}
+
+.navbar {
+  margin-top: 20px;
+}
+
+.navbar > .container-fluid {
+  justify-content: flex-end;
+}
+
+.navbar,
+.navtitulos {
+  color: #fff;
+  background-color: #313131;
+  border-radius: 0.25rem;
+}
+
+.share {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-brand {
+        color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* CONTENIDO CENTRAL */
+
+.container-central {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icono-video {
+  width: 40px;
+  height: 40px;
+}
+
+.icono-fotos {
+  width: 40px;
+  height: 40px;
+}
+
+.imagen-harry {
+  width: auto;
+  height: 396px;
+}
+
+.contenedor-video,
+.contenedor-fotos {
+  width: 210px;
+  height: 184px;
+  background-color: #313131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-fotos {
+  margin-left: 10px;
+  padding: 0;
+}
+
+.texto-video-foto {
+  font-weight: bold;
+}
+
+.contenedor-icono {
+  display: flex;
+  justify-content: center;
+}
+
+.favorito{
+    width: 40px;
+    height: 40px;
+    z-index:1;
+	filter:alpha(opacity=70);
+	-moz-opacity:.70;
+	opacity:.70;
+    cursor: pointer;
+     margin-left: -3px;
+}
+
+.favorito:hover{
+    opacity: 100;
+   
+}
+
+#boton {
+        float: left;
+        position: absolute;
+        }
+
+.imagen-harry{float: left;} 
+
+/* BOTONES DEL GENERO */
+.contenedor-textos p{
+    font-weight: bold;
+}
+
+.color-gris{
+    color: gray;
+}
+
+.contenedor-botones, .contenedor-dropdown, a{
+    padding-top: 20px;
+    text-decoration: none;
+    color: #5799ef;
+    font-weight: bold;
+}
+
+.btn-generos{
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    align-items: center;
+}
+
+.btn-outline-primary{
+    color: #fff;
+    border-color: #fff;
+        border-radius: 25px;
+}
+
+.btn-outline-primary:hover{
+    color: #fff;
+    background-color: #313131;
+    border-color: #fff;
+}
+
+.flecha{
+    display: inline-block;
+    justify-content: flex-end;
+    width: 52px;
+    height: 10px;
+}
+
+.texto-flecha{
+    padding: 0;
+}
+
+.btn-secondary{
+  font-size: 16px;
+  font-weight: bold;
+    display: flex;
+    background-color: #313131;
+    border: none;
+}
+
+.col-sm-8{
+    padding-right: 70px;
+}
+.dropdown-toggle, .dropdown-toggle-split{
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+/* REVIEWS */
+
+.contenedor-review{
+  display: flex;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.contenedor-review ul{
+  color: #5799ef;
+}
+
+.soy-verde{
+  color: #fff;
+  background-color: #54A72A;
+}
+
+/* NOMINADOS-OSCAR */
+
+.container-background-gris{
+  background-color: #fff;
+  color: #121212;
+  display: flex;
+  justify-content: center;
+}
