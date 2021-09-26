@@ -307,3 +307,70 @@ p {
 
   justify-content: center;
 }
+
+.nominados{
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(245,197,24);
+      border-radius: 5px;
+    height: 50px;
+
+}
+
+.oscars{
+  width: 40px;
+  height: 30px;
+}
+
+.explore{
+  display: flex;
+  justify-content: center;
+
+}
+
+.marcador{
+  width: 50px;
+}
+
+.flecha-marcador{
+      margin-bottom: 5px;
+    margin-left: 20px;
+    width: 20px;
+       
+}
+
+.videos{
+  display: flex;
+  align-items: center;
+}
+
+.videos-youtube{
+  padding-top: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+.videos-marcador{
+  display: flex;
+  justify-content: flex-start;
+   margin-left: -37px;
+
+}
+
+.videos-marcador-dos{
+  display: flex;
+  justify-content: flex-start;
+   margin-left: -30px;
+
+}
+
+.imagenes-horizontales{
+  margin-top: 22px;
+    position: absolute !important;
+    width: 400px;
+    height: auto;
+}
+
+.img-carrusel{
+  width: 133px;
+}

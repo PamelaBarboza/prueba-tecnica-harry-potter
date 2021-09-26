@@ -8,7 +8,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="estilos.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+
         <title>Harry Potter y la piedra filosofal</title>
 
     </head>
@@ -206,9 +210,108 @@
 <!-- NOMINADOS -->
 <div class="container">
   <div class="row">
-    <div class="col-sm-8">Nominated for 3 Oscars 17 wins & 68 nominations total</div>
-    <div class="col-sm-4"><h3>More to explore</h3></div>
+      
+    <div class="col-sm-8 nominados"> <img class="oscars" src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGc+PHBhdGggZD0ibTM1OS44MDEgNDI5LjMtMTAzLjgwMS0zMC0xMDMuODAxIDMwYy0uODk5IDEuOC0xLjE5OSAzLjYtMS4xOTkgNS43djYyaDIxMHYtNjJjMC0yLjEtLjMtMy45LTEuMTk5LTUuN3oiIGZpbGw9IiM2NDZkNzMiLz48L2c+PHBhdGggZD0ibTM2MSA0OTd2LTYyYzAtMi4xLS4zLTMuOS0xLjE5OS01LjdsLTEwMy44MDEtMzB2OTcuN3oiIGZpbGw9IiM0NzRmNTQiLz48cGF0aCBkPSJtNDk3IDMwaC03Ni42NDVjLjEzMi01LjA2Ny42NDUtOS44NC42NDUtMTUgMC04LjQwMS02LjU5OS0xNS0xNS0xNWgtMzAwYy04LjQwMSAwLTE1IDYuNTk5LTE1IDE1IDAgNS4xNi41MTMgOS45MzMuNjQzIDE1aC03Ni42NDNjLTguMjkxIDAtMTUgNi43MDktMTUgMTV2MzcuOTk4YzAgODMuNzU0IDY3LjA5MiAxNTEuNzkxIDE0OS43NzMgMTU2LjE3MSAxNy4yMjUgMjMuNzE2IDM3LjY2OCA0MS4zMTYgNjAuOTI3IDUxLjIzMS0zLjYgNzIuOS00NS4zIDEyMy42LTU1LjE5OSAxMzQuMTAxLTEuNTAxIDEuMTk5LTIuNzAxIDIuOTk5LTMuMzAxIDQuNzk5aDIwNy42MDFjLS42MDEtMS44LTEuOC0zLjYtMy4zMDEtNC43OTktMTAuMi0xMC41MDEtNTEuNi02MC45MDEtNTUuMi0xMzQuMTAxIDIzLjI2NC05LjkxNyA0My44My0yNy41MjEgNjEuMDY5LTUxLjI0NiA4Mi42MS00LjQ1MSAxNDkuNjMxLTcyLjQ0OSAxNDkuNjMxLTE1Ni4xNTZ2LTM3Ljk5OGMwLTguMjkxLTYuNzA5LTE1LTE1LTE1em0tNDY3IDUyLjk5OHYtMjIuOTk4aDYyLjkzYzMuODkzIDQ5LjU3OCAxNC42NDQgMTAyLjA4NiAzNy4yNCAxNDYuNzA4LTU2LjY0LTEyLjc1NS0xMDAuMTctNjMuMjY1LTEwMC4xNy0xMjMuNzF6bTQ1MiAwYzAgNjAuNDE0LTQzLjQ5MSAxMTAuOS0xMDAuMDg5IDEyMy42ODQgMjIuNDE3LTQ0LjYyMSAzMy4yMjgtOTYuNjIxIDM3LjE1OS0xNDYuNjgyaDYyLjkzeiIgZmlsbD0iI2ZlZDg0MyIvPjxwYXRoIGQ9Im00OTcgMzBoLTc2LjY0NWMuMTMyLTUuMDY3LjY0NS05Ljg0LjY0NS0xNSAwLTguNDAxLTYuNTk5LTE1LTE1LTE1aC0xNTB2NDI5LjNoMTAzLjgwMWMtLjYwMS0xLjgtMS44LTMuNi0zLjMwMS00Ljc5OS0xMC4yLTEwLjUwMS01MS42LTYwLjkwMS01NS4yLTEzNC4xMDEgMjMuMjY0LTkuOTE3IDQzLjgzLTI3LjUyMSA2MS4wNjktNTEuMjQ2IDgyLjYxLTQuNDUxIDE0OS42MzEtNzIuNDQ5IDE0OS42MzEtMTU2LjE1NnYtMzcuOTk4YzAtOC4yOTEtNi43MDktMTUtMTUtMTV6bS0xNSA1Mi45OThjMCA2MC40MTQtNDMuNDkxIDExMC45LTEwMC4wODkgMTIzLjY4NCAyMi40MTktNDQuNjIxIDMzLjIzLTk2LjYyMSAzNy4xNTktMTQ2LjY4Mmg2Mi45M3oiIGZpbGw9IiNmYWJlMmMiLz48ZyBpZD0iVHJvcGh5XzMxXyI+PGc+PHBhdGggZD0ibTI3OS45MzYgMTkwLjc5Ni0yMy45MzYtMTIuNDM3LTIzLjkzNiAxMi40MzdjLTUuMDEgMi41NzgtMTEuMTMzIDIuMTUzLTE1LjczMi0xLjE3Mi00LjYtMy4zNC02LjkxNC04Ljk5NC01Ljk3Ny0xNC41OWw0LjM5NS0yNi42NDYtMTkuMTg5LTE4Ljk0Yy00LjE3Ny00LjA3Mi01LjQ1NC0xMC4xMDktMy43NS0xNS4zMjIgMS43NTgtNS4zOTEgNi40MTYtOS4zNDYgMTIuMDQxLTEwLjE5NWwyNi42Ni00LjAxNCAxMi4wNy0yNC4xMjZjNS4wOTgtMTAuMTY2IDIxLjczOC0xMC4xNjYgMjYuODM2IDBsMTIuMDcgMjQuMTI2IDI2LjY2IDQuMDE0YzUuNjI1Ljg1IDEwLjI4MyA0LjgwNSAxMi4wNDEgMTAuMTk1IDEuNzU4IDUuNDA1LjMyMiAxMS4zMzgtMy43NSAxNS4zMjJsLTE5LjE4OSAxOC45NCA0LjM5NSAyNi42NDZjLjkzOCA1LjU5Ni0xLjM3NyAxMS4yNS01Ljk3NyAxNC41OS00LjU2OSAzLjMxMS0xMC42ODEgMy44LTE1LjczMiAxLjE3MnoiIGZpbGw9IiNmYWJlMmMiLz48L2c+PC9nPjxwYXRoIGQ9Im0yNzkuOTM2IDE5MC43OTZjNS4wNTIgMi42MjggMTEuMTY0IDIuMTM5IDE1LjczMi0xLjE3MiA0LjYtMy4zNCA2LjkxNC04Ljk5NCA1Ljk3Ny0xNC41OWwtNC4zOTUtMjYuNjQ2IDE5LjE4OS0xOC45NGM0LjA3Mi0zLjk4NCA1LjUwOC05LjkxNyAzLjc1LTE1LjMyMi0xLjc1OC01LjM5MS02LjQxNi05LjM0Ni0xMi4wNDEtMTAuMTk1bC0yNi42Ni00LjAxNC0xMi4wNy0yNC4xMjZjLTIuNTQ5LTUuMDgzLTcuOTgzLTcuNjI1LTEzLjQxOC03LjYyNXYxMTAuMTkzeiIgZmlsbD0iI2ZmOTEwMCIvPjxnPjxwYXRoIGQ9Im0zNzYgNTEyaC0yNDBjLTguMjkxIDAtMTUtNi43MDktMTUtMTVzNi43MDktMTUgMTUtMTVoMjQwYzguMjkxIDAgMTUgNi43MDkgMTUgMTVzLTYuNzA5IDE1LTE1IDE1eiIgZmlsbD0iIzQ3NGY1NCIvPjwvZz48cGF0aCBkPSJtMzc2IDQ4MmgtMTIwdjMwaDEyMGM4LjI5MSAwIDE1LTYuNzA5IDE1LTE1cy02LjcwOS0xNS0xNS0xNXoiIGZpbGw9IiMzMjM5M2YiLz48L2c+PC9zdmc+" /><b> Nominated for 3 Oscars </b><span> &nbsp 17 wins & 68 nominations total</span> 
+        
+    
+    </div>
+    
+    <div class="col-sm-4 explore"> <img class="marcador" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDE0LjcwNyAxNC43MDciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHJlY3QgeD0iNi4yNzUiIHk9IjAiIHN0eWxlPSIiIHdpZHRoPSIyLjE1OCIgaGVpZ2h0PSIxNC43MDciIGZpbGw9IiNmNWM1MTgiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcmVjdD4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" /><h3>More to explore</h3>
+    
+    </div>
   </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+
+  <div class="videos-marcador"> <img class="marcador" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDE0LjcwNyAxNC43MDciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHJlY3QgeD0iNi4yNzUiIHk9IjAiIHN0eWxlPSIiIHdpZHRoPSIyLjE1OCIgaGVpZ2h0PSIxNC43MDciIGZpbGw9IiNmNWM1MTgiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcmVjdD4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" /><h3 class="videos">VIDEOS</h3>
+
+
+    <img class="flecha-marcador" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ5Mi4wMDQgNDkyLjAwNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkyLjAwNCA0OTIuMDA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM4Mi42NzgsMjI2LjgwNEwxNjMuNzMsNy44NkMxNTguNjY2LDIuNzkyLDE1MS45MDYsMCwxNDQuNjk4LDBzLTEzLjk2OCwyLjc5Mi0xOS4wMzIsNy44NmwtMTYuMTI0LDE2LjEyDQoJCQljLTEwLjQ5MiwxMC41MDQtMTAuNDkyLDI3LjU3NiwwLDM4LjA2NEwyOTMuMzk4LDI0NS45bC0xODQuMDYsMTg0LjA2Yy01LjA2NCw1LjA2OC03Ljg2LDExLjgyNC03Ljg2LDE5LjAyOA0KCQkJYzAsNy4yMTIsMi43OTYsMTMuOTY4LDcuODYsMTkuMDRsMTYuMTI0LDE2LjExNmM1LjA2OCw1LjA2OCwxMS44MjQsNy44NiwxOS4wMzIsNy44NnMxMy45NjgtMi43OTIsMTkuMDMyLTcuODZMMzgyLjY3OCwyNjUNCgkJCWM1LjA3Ni01LjA4NCw3Ljg2NC0xMS44NzIsNy44NDgtMTkuMDg4QzM5MC41NDIsMjM4LjY2OCwzODcuNzU0LDIzMS44ODQsMzgyLjY3OCwyMjYuODA0eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+</div>
+<div class="videos-youtube">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7EC4WaRLZvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</div>
+
+    <div class="col-sm-4"><img class="photos" src="/asset/photos.jpg" alt="photos">
+    <p>View image Photos
+Hollywood Romances: Our Favorite Couples
+See the entire gallery</p>
+<br>
+<h4>Editorial lists
+Related lists created by IMDb editors</h4>
+<img class="imagenes-horizontales" src="/asset/galeria.jpg" alt="">
+</div>
+    
+  </div>
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+
+  <div class="videos-marcador"> <img class="marcador" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDE0LjcwNyAxNC43MDciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHJlY3QgeD0iNi4yNzUiIHk9IjAiIHN0eWxlPSIiIHdpZHRoPSIyLjE1OCIgaGVpZ2h0PSIxNC43MDciIGZpbGw9IiNmNWM1MTgiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcmVjdD4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" /><h3 class="videos">PHOTOS</h3>
+    <img class="flecha-marcador" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ5Mi4wMDQgNDkyLjAwNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkyLjAwNCA0OTIuMDA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM4Mi42NzgsMjI2LjgwNEwxNjMuNzMsNy44NkMxNTguNjY2LDIuNzkyLDE1MS45MDYsMCwxNDQuNjk4LDBzLTEzLjk2OCwyLjc5Mi0xOS4wMzIsNy44NmwtMTYuMTI0LDE2LjEyDQoJCQljLTEwLjQ5MiwxMC41MDQtMTAuNDkyLDI3LjU3NiwwLDM4LjA2NEwyOTMuMzk4LDI0NS45bC0xODQuMDYsMTg0LjA2Yy01LjA2NCw1LjA2OC03Ljg2LDExLjgyNC03Ljg2LDE5LjAyOA0KCQkJYzAsNy4yMTIsMi43OTYsMTMuOTY4LDcuODYsMTkuMDRsMTYuMTI0LDE2LjExNmM1LjA2OCw1LjA2OCwxMS44MjQsNy44NiwxOS4wMzIsNy44NnMxMy45NjgtMi43OTIsMTkuMDMyLTcuODZMMzgyLjY3OCwyNjUNCgkJCWM1LjA3Ni01LjA4NCw3Ljg2NC0xMS44NzIsNy44NDgtMTkuMDg4QzM5MC41NDIsMjM4LjY2OCwzODcuNzU0LDIzMS44ODQsMzgyLjY3OCwyMjYuODA0eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+
+    
+
+  </div>
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col">
+          <div class="bg-secondary">
+              <img class="img-carrusel" src="/asset/1.jpg" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-secondary">
+              <img class="img-carrusel" src="/asset/2.jpg" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-secondary">
+              <img class="img-carrusel" src="/asset/3.jpg" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-secondary">
+              <img class="img-carrusel" src="/asset/4.jpg" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-secondary"><img class="img-carrusel" src="/asset/5.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    
+   
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    
+    
+  </a>
+</div>
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+
+  <div class="videos-marcador-dos"> <img class="marcador" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDE0LjcwNyAxNC43MDciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHJlY3QgeD0iNi4yNzUiIHk9IjAiIHN0eWxlPSIiIHdpZHRoPSIyLjE1OCIgaGVpZ2h0PSIxNC43MDciIGZpbGw9IiNmNWM1MTgiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcmVjdD4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" /><h3 class="videos">TOP CAST</h3>
+    <img class="flecha-marcador" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ5Mi4wMDQgNDkyLjAwNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkyLjAwNCA0OTIuMDA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM4Mi42NzgsMjI2LjgwNEwxNjMuNzMsNy44NkMxNTguNjY2LDIuNzkyLDE1MS45MDYsMCwxNDQuNjk4LDBzLTEzLjk2OCwyLjc5Mi0xOS4wMzIsNy44NmwtMTYuMTI0LDE2LjEyDQoJCQljLTEwLjQ5MiwxMC41MDQtMTAuNDkyLDI3LjU3NiwwLDM4LjA2NEwyOTMuMzk4LDI0NS45bC0xODQuMDYsMTg0LjA2Yy01LjA2NCw1LjA2OC03Ljg2LDExLjgyNC03Ljg2LDE5LjAyOA0KCQkJYzAsNy4yMTIsMi43OTYsMTMuOTY4LDcuODYsMTkuMDRsMTYuMTI0LDE2LjExNmM1LjA2OCw1LjA2OCwxMS44MjQsNy44NiwxOS4wMzIsNy44NnMxMy45NjgtMi43OTIsMTkuMDMyLTcuODZMMzgyLjY3OCwyNjUNCgkJCWM1LjA3Ni01LjA4NCw3Ljg2NC0xMS44NzIsNy44NDgtMTkuMDg4QzM5MC41NDIsMjM4LjY2OCwzODcuNzU0LDIzMS44ODQsMzgyLjY3OCwyMjYuODA0eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+
+    
+
+  </div>
+  
+  
 
 
 </body>
